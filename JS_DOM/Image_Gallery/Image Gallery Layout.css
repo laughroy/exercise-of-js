@@ -1,0 +1,51 @@
+* {
+    margin: auto;
+}
+
+body {
+
+    font-family: "Helvetica", "Arial", serif;
+    color: #333;
+    background: #ccc;
+    width: 800px;
+    margin: 10px auto 10px auto;
+}
+
+h1 {
+    color: #333;
+    background: transparent;
+}
+
+a {
+    color: #c60;
+    background: transparent;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    padding: 1em;
+}
+
+img {
+    display: block;
+    clear: both;
+}
+
+#l_button {
+    margin: auto 10em;
+}
+
+#r_button {
+    margin: auto 10em;
+}
+
+p {
+    text-align: center;
+}

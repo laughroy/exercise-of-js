@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>wrap</title>
+    <style type="text/css">
+    body {
+        background: gray;
+    }
+    /* 定栏目位置 */
+	
+    #wrap {
+        position: absolute;
+        width: 249px;
+        height: 249px;
+        z-index: 1;
+        left: 712px;
+        top: 201px;
+    }
+    /*初始化列表样式*/
+
+    #wrap ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        color: #777;
+    }
+
+	li:not([class="n"]) {
+		margin:20px; 
+        background: white;/*注意选择器优先级/如果这里换成#wrap li那么下面的li：nth~将不生效*/
+    }
+    #wrap li:hover {
+    	background: gray;
+    }
+
+    #wrap li a {
+        text-decoration: none;
+        color: #777;
+    }
+
+    #wrap li a:hover {
+        color: #f63;
+    }
+     li:nth-child(2n+1) {
+    	background: green;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul id="container">
+            <li><a href="#">送君千里终须一别</a></li>
+            <li><a href="#">旅行的意义</a></li>
+            <li><a href="#" >南师虽去，精神永存</a></li>
+            <li><a href="#" class="n">送君千里终须一别</a></li>
+            <li><a href="#">旅行的意义</a></li>
+            <li><a href="#">南师虽去，精神永存</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

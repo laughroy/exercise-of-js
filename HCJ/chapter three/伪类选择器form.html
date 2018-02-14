@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<style type="text/css">
+	input[type="text"],input[type="password"]{
+		border: 1px solid #0f0;
+		width: 160px;
+		height: 22px;
+		padding-left: 20px;
+		margin: 6px 0;
+		line-height: 20px;
+	}
+	input[type="text"]:not([disabled]){
+		background: green;
+	}
+	input[type="password"]:not([disabled]){
+		background: blue;
+	}
+
+	</style>
+</head>
+<body>
+	<form action="">
+		<lable for="username">username</lable>
+		<input type="text" name="username" id="username">
+		<input type="text" name="usernamel" disabled="disabled" value="不可用">
+		<lable for="password">password</lable>
+		<input type="password" name="password" id="password">
+		<input type="password" name="passwordl" disabled="disabled" value="不可用">
+		<input type="submit" value="commite">
+	</form>
+</body>
+</html>

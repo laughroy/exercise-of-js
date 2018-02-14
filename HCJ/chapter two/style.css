@@ -1,0 +1,48 @@
+html
+{
+    min-width: 776px;
+}
+
+body
+{
+    font-family: 'ËÎÌå', 'ĞÂËÎÌå', arial, verdana, sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    color: #000;
+    border: 0;
+    background: #6d89dd;
+}
+
+a
+{
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+
+    border: 0;
+}
+
+a:link
+{
+
+    color: #e66133;
+}
+
+a:visited
+{
+    color: #e66133;
+}
+
+a:hover
+{
+    text-decoration: underline;
+
+    color: #637dbc;
+}

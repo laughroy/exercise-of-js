@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Image_Gallery_Optimize_Layout.css">
+    <title>Image Gallery</title>
+    <script src="Image_Gallery_Optimize.js"></script>
+</head>
+
+<body>
+    <div id="testdiv"></div>
+    <h1>Snapshots</h1>
+    <img id="placeholder" src="Image/placeholder.jpg" alt="my image gallery" width="400" height="300">
+    <ul id="imagegallery">
+        <li><a href="Image/fireworks.jpg" title="fireworks">
+            <img src="Image/fireworks.jpg" alt="fireworks">
+        </a></li>
+        <li><a href="Image/coffee.jpg" title="coffee">
+            <img src="Image/coffee.jpg" alt="coffee">
+        </a></li>
+        <li><a href="Image/rose.jpg" title="rose">
+            <img src="Image/rose.jpg" alt="rose">
+        </a></li>
+        <li><a href="Image/clock.jpg" title="clock">
+            <img src="Image/clock.jpg" alt="clock">
+        </a></li>
+    </ul>
+    
+    <button id="l_button" type="button" onclick="ShowNodeType();">show nodeType</button>
+    <button id="r_button" type="button" onclick="countBodyChildren();">countChildNodes</button>
+
+    <p id="description">choose an image</p>
+	<a class="popup" href="http://www.example.com" onClick="popUp(this.href); return false;">Example</a>
+    <script type="text/javascript" src="Image_Gallery_Optimize.js"></script>
+</body>
+
+</html>

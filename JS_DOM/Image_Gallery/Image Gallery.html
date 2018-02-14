@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Image Gallery Layout.css">
+    <title>Image Gallery</title>
+    <script src="Image Gallery.js"></script>
+</head>
+
+<body>
+    <h1>Snapshots</h1>
+    <ul>
+        <li><a href="Image/fireworks.jpg" title="fireworks" onclick="ShowPic(this);return false;">A fireworks display</a></li>
+        <li><a href="Image/coffee.jpg" title="coffee" onclick="ShowPic(this);return false;">A cup of black coffee</a></li>
+        <li><a href="Image/rose.jpg" title="rose" onclick="ShowPic(this);return false;">A red,red rose</a></li>
+        <li><a href="Image/clock.jpg" title="clock" onclick="ShowPic(this);return false;">The famous clock</a></li>
+    </ul>
+    <img id="placeholder" src="Image/placeholder.jpg" alt="my image gallery" width="400" height="300">
+    <button id="l_button" type="button" onclick="ShowNodeType();">show nodeType</button>
+    <button id="r_button" type="button" onclick="countBodyChildren();">countChildNodes</button>
+
+    <p id="description">choose an image</p>
+	<a class="popup" href="http://www.example.com" onClick="popUp(this.href); return false;">Example</a>
+    <script type="text/javascript" src="Image Gallery.js"></script>
+</body>
+
+</html>

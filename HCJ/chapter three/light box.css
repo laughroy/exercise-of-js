@@ -1,0 +1,131 @@
+/*灯箱外部样式*/
+
+.pic_box
+{
+    position: relative;
+
+    float: left;
+
+    border: solid 6px #bbb;
+}
+
+
+.pic_box img
+{
+    width: 500px;
+
+    border: solid 1px #fff;
+}
+
+/*导航框样式*/
+
+.nav
+{
+    position: absolute;
+    right: 12px;
+    bottom: 6px;
+
+    float: left;
+
+    padding: 4px 12px;
+
+    opacity: .6;
+    border: 1px solid #ccc;
+    background: #999;
+}
+
+/*导航按钮样式*/
+
+.nav a
+{
+    line-height: 20px;
+
+    display: block;
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: green;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    background: #f36;
+}
+
+.nav a:hover
+{
+    color: #fff;
+    background: green;
+}
+
+
+/*属性/属性值的E[attr]/E[attr="value"]选择器*/
+
+.nav a[href][title]
+{
+    color: green;
+    background: yellow;
+}
+
+.nav a[id]
+{
+    font-weight: bold;
+
+    color: yellow;
+    background: blue;
+}
+.nav a[class='links']
+{
+    color: red;
+}
+.nav a[class='links item']
+{
+    color: red;
+}
+/*下面属性是有效的title的属性词表里又包含website的*/
+.nav a[title~='website']
+{
+    color: green;
+    background: orange;
+}
+/*下面属性是无效的，title里website*/
+.nav a[title='website']
+{
+    color: green;
+    background: orange;
+}
+/*E[attr^="value"]选择attr属性值以"value"开头的所有元素*/
+.nav a[title^='http://']
+{
+    color: green;
+    background: orange;
+}
+/*选择器没有选中任何元素*/
+.nav a[title^='mailto']
+{
+    color: orange;
+    background: green;
+}
+/*E[attr$="value"]以attr属性值value结尾的所有元素*/
+.nav a[href$='png']
+{
+    color: green;
+    background: orange;
+}
+/*E[attr*="value"]选择attr属性值里所有包含value的元素*/
+.nav a[title*='site']
+{
+    color: white;
+    background: black;
+}
+/*E[attr|="value"]以attr属性值value开头的所有元素*/
+.nav a[lang|='zh']
+{
+    color: yellow;
+    background: gray;
+}
